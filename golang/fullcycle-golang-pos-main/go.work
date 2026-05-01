@@ -1,0 +1,27 @@
+go 1.21.4
+
+use ./07-Packing/04-Workspace/system
+
+use ./07-Packing/04-Workspace/math
+
+use (
+	./03-Fundacao/22-Interface/BankAccounts-Project-Example
+	./03-Fundacao/22-Interface/DataBase-Project-Example
+	./08-Testing/01
+	./08-Testing/02
+	./08-Testing/03
+	./09-APIS
+	./11-Events
+	./12-GraphQl
+	./14-GRPC
+	./15-UploadS3
+	./16-CLI
+	./17-SQLC
+	./18-UOW
+	./19-DI
+	./20-CleanArchitecture
+	./21-DEPLOY-K8S
+	./24-fsnotify
+	./25-Patterns/01-options
+	./CleanArchitecture
+)
