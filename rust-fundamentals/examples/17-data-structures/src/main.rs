@@ -25,4 +25,7 @@ fn main() {
     println!("{:?}", east);
     println!("{:?}", south);
     println!("{:?}", west);
+
+    //o # formata json logs muito grandes
+    println!("{:#?}", west);
 }

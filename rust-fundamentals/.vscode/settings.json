@@ -19,6 +19,7 @@
         "./examples/14-borrowing/borrowing/Cargo.toml",
         "./examples/15-panic/panicking/Cargo.toml",
         "./examples/16-error-handling/error-handling/Cargo.toml",
-        "./examples/17-data-structures/Cargo.toml"
+        "./examples/17-data-structures/Cargo.toml",
+        "./labs/file_reader_app/Cargo.toml"
     ]
 }

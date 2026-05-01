@@ -1,8 +1,18 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
+use std::{env, path};
 
 fn main() {
-    let file = File::open("non_existent_file.txt");
+    //env::set_var("RUST_BACKTRACE", "full");
+    let path = env::current_dir();
+    println!("{}",path.unwrap().display());
+
+    match env::current_dir() {
+        Ok(path) => println!("O diretório atual é: {:?}", path.display()),
+        Err(e) => println!("Erro ao obter o diretório: {:?}", e),
+    }
+
+    let file = File::open("src/non_existent_file.txt");
     let file = match file {
         Ok(file) => file,
         Err(error) => {
@@ -26,4 +36,11 @@ fn main() {
             }
         }
     }
+
+    /* 
+    let reader = BufReader::new(file);
+    for line in reader.lines(){
+        println!(":{}",line.unwrap());
+    }
+    */
 }
